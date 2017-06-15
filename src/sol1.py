@@ -1,7 +1,11 @@
 import pandas as pd
 
 def calculate(url):
-    
+    """
+        This function downloads and computes the aggregation of functional and non-functional water sources
+        per community. The result is merged with the total number of functional water sources in all communities.
+        A ranking is based on the percentage of faulty water sources per community.
+    """
     df = pd.read_json(url)
     df = df[['water_functioning', 'communities_villages']]
     df = df.groupby(['communities_villages', 'water_functioning']).size().unstack()
