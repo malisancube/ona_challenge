@@ -6,18 +6,21 @@ This is a solution to the coding challenge as indicated in the wiki.
 Setup
 ============
 
+```
 pip install -r requirements.txt
-
+```
 
 Running Unit Tests
 ==================
 
 This will test the solution against the values form the api.
 
+```
 cd ./src
 python -m unittest unit_tests
+```
 
-To determine the accuracy of the calculate function, I exported the https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json to and excel file on  ![Here](.\data\pivots.xlsx).
+To determine the accuracy of the calculate function, I exported the https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json to and excel file on the ./data folder.
 
 
 Constraints
