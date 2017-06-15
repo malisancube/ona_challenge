@@ -49,6 +49,6 @@ and the expected results was
 }
 ```
 
-As you can see the, data structure shown does not indicate total number per community. I had to include it anyway because it was part of the question. The output is a s follows
+As you can see the, data structure shown does not indicate total number per community. I had to include it anyway because it was part of the question. The output is as follows
 
 ![Results](/img/results_json.png)
