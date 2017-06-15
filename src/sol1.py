@@ -1,4 +1,5 @@
 import pandas as pd
+import simplejson as json
 
 def calculate(url):
     """
@@ -19,8 +20,8 @@ def calculate(url):
     df = df.rename(columns={'yes': 'functional', 'no':'non_functional'})
     df = df[['functional', 'non_functional', 'total', 'ranking']]
     records = df.to_json(orient='index')
-    result = '{"number_functional": %s, %s}' % (total_functional, records)
-    return result
+    result = '{"number_functional": %s, "communities": %s}' % (total_functional, records)
+    return json.loads(result)
 
 
 print calculate('https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json')

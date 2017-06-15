@@ -1,6 +1,9 @@
 import unittest
 import sol1, sol2
 
+'water_functioning', 'communities_villages'
+
+
 class TestAggregations(unittest.TestCase):
     """Aggregation Tests"""
     def sum_of_functional_water_points(self):
@@ -10,4 +13,3 @@ class TestAggregations(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    
