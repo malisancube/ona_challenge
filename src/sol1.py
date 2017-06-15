@@ -24,5 +24,5 @@ def calculate(url):
     return json.loads(result)
 
 
-print calculate('https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json')
-
+data = calculate('https://raw.githubusercontent.com/onaio/ona-tech/master/data/water_points.json')
+print data['number_functional']
